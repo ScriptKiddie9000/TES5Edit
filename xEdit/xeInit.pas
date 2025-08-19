@@ -956,7 +956,7 @@ begin
       and FindCmdLineSwitch('ThisIsFine')
       and FindCmdLineSwitch('GiveMeTheRedPill')
     then begin
-      VersionString.Title := 'ItJustWorks[TM] Edition';
+      VersionString.Title := 'ItJustWorks[TM] Shiny Edition';
       wbRedPill := True;
       wbStarfieldIsABugInfestedHellhole := False; //you wish... but lets pretend
     end;

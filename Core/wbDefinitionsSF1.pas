@@ -6102,9 +6102,9 @@ begin
       wbUnknown
     ]).IncludeFlag(dfCanContainFormID)
       .IncludeFlag(dfCanContainReflection)
-      .IncludeFlag(dfDontAssign)
-      .IncludeFlag(dfInternalEditOnly)
-      .IncludeFlag(dfIsReflection)
+      .IncludeFlag(dfDontAssign, wbStarfieldIsABugInfestedHellhole)
+      .IncludeFlag(dfInternalEditOnly, wbStarfieldIsABugInfestedHellhole)
+      .IncludeFlag(dfIsReflection, wbStarfieldIsABugInfestedHellhole)
       .IncludeFlag(dfNoReport);
 
   var wbRDIF :=
@@ -6117,9 +6117,9 @@ begin
       wbUnknown
     ]).IncludeFlag(dfCanContainFormID)
       .IncludeFlag(dfCanContainReflection)
-      .IncludeFlag(dfDontAssign)
-      .IncludeFlag(dfInternalEditOnly)
-      .IncludeFlag(dfIsReflection)
+      .IncludeFlag(dfDontAssign, wbStarfieldIsABugInfestedHellhole)
+      .IncludeFlag(dfInternalEditOnly, wbStarfieldIsABugInfestedHellhole)
+      .IncludeFlag(dfIsReflection, wbStarfieldIsABugInfestedHellhole)
       .IncludeFlag(dfNoReport);
 
   var wbBaseFormComponents: IwbRecordMemberDef;
@@ -6792,9 +6792,9 @@ begin
             wbUnknown
           ]).IncludeFlag(dfCanContainFormID)
             .IncludeFlag(dfCanContainReflection)
-            .IncludeFlag(dfDontAssign)
-            .IncludeFlag(dfInternalEditOnly)
-            .IncludeFlag(dfIsReflection)
+            .IncludeFlag(dfDontAssign, wbStarfieldIsABugInfestedHellhole)
+            .IncludeFlag(dfInternalEditOnly, wbStarfieldIsABugInfestedHellhole)
+            .IncludeFlag(dfIsReflection, wbStarfieldIsABugInfestedHellhole)
             .IncludeFlag(dfNoReport)
         ]),
         //BGSPropertySheet_Component
@@ -6811,9 +6811,9 @@ begin
             wbUnknown
           ]).IncludeFlag(dfCanContainFormID)
             .IncludeFlag(dfCanContainReflection)
-            .IncludeFlag(dfDontAssign)
-            .IncludeFlag(dfInternalEditOnly)
-            .IncludeFlag(dfIsReflection)
+            .IncludeFlag(dfDontAssign, wbStarfieldIsABugInfestedHellhole)
+            .IncludeFlag(dfInternalEditOnly, wbStarfieldIsABugInfestedHellhole)
+            .IncludeFlag(dfIsReflection, wbStarfieldIsABugInfestedHellhole)
             .IncludeFlag(dfNoReport)
         ]),
         //BGSLodOwner_Component
@@ -10360,9 +10360,9 @@ begin
       wbUnknown
     ]).IncludeFlag(dfCanContainFormID)
       .IncludeFlag(dfCanContainReflection)
-      .IncludeFlag(dfDontAssign)
-      .IncludeFlag(dfInternalEditOnly)
-      .IncludeFlag(dfIsReflection)
+      .IncludeFlag(dfDontAssign, wbStarfieldIsABugInfestedHellhole)
+      .IncludeFlag(dfInternalEditOnly, wbStarfieldIsABugInfestedHellhole)
+      .IncludeFlag(dfIsReflection, wbStarfieldIsABugInfestedHellhole)
       .IncludeFlag(dfNoReport),
     wbStruct(DNAM, 'Data', [
       wbInteger('Master Particle System Cap', itU16),
@@ -15850,9 +15850,9 @@ begin
       wbUnknown
     ]).IncludeFlag(dfCanContainFormID)
       .IncludeFlag(dfCanContainReflection)
-      .IncludeFlag(dfDontAssign)
-      .IncludeFlag(dfInternalEditOnly)
-      .IncludeFlag(dfIsReflection)
+      .IncludeFlag(dfDontAssign, wbStarfieldIsABugInfestedHellhole)
+      .IncludeFlag(dfInternalEditOnly, wbStarfieldIsABugInfestedHellhole)
+      .IncludeFlag(dfIsReflection, wbStarfieldIsABugInfestedHellhole)
       .IncludeFlag(dfNoReport),
 
     wbFormIDCk(XATR, 'Attach Ref', sigReferences),
@@ -17097,7 +17097,7 @@ begin
     wbNTRM,
     wbStruct(MOLM, 'Material Swaps', [
       wbArrayS('Material Swaps', wbFormIDCk('Layered Material Swap', [LMSW]), -2),
-      wbUnused(0).IncludeFlag(dfDontAssign)
+      wbUnused(0).IncludeFlag(dfDontAssign, wbStarfieldIsABugInfestedHellhole)
     ]),
     wbFULL
   ]).SetSummaryKey([12]);
