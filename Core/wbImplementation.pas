@@ -18623,7 +18623,7 @@ begin
   BeginUpdate;
   try
     try
-      if Assigned(aElement) and aElement.ContainsReflection then
+      if Assigned(aElement) and aElement.ContainsReflection and wbStarfieldIsABugInfestedHellhole then
         if not Supports(aElement, IwbMainRecord) or Supports(Self, IwbMainRecord) then
           raise Exception.Create(aElement.Name + ' contains Reflection and can not be assigned');
 
@@ -18754,7 +18754,7 @@ begin
   Result := False;
   try
   {$ENDIF}
-    if Assigned(aElement) and aElement.ContainsReflection then
+    if Assigned(aElement) and aElement.ContainsReflection and wbStarfieldIsABugInfestedHellhole then
       if not Supports(aElement, IwbMainRecord) or Supports(Self, IwbMainRecord) then
         Exit(False);
 

@@ -5136,7 +5136,7 @@ procedure wbVCI1ToStrAfterFO4(var aValue:string; aBasePtr: Pointer; aEndPtr: Poi
 procedure wbTimeStampToString(var aValue:string; aBasePtr: Pointer; aEndPtr: Pointer; const aElement: IwbElement; aType: TwbCallbackType);
 
 /// <summary>Collapse and truncate the given text to fit in the given width.</summary>
-function ShortenText(const aText: string; const aWidth: Integer = 64; const aPlaceholder: string = '…'): string;
+function ShortenText(const aText: string; const aWidth: Integer = 64; const aPlaceholder: string = 'ï¿½'): string;
 
 procedure wbInitRecords;
 
@@ -24145,8 +24145,10 @@ procedure TwbReflectionDef.AfterConstruction;
 begin
   inherited;
   Include(defFlags, dfNoReport);
-  Include(defFlags, dfDontAssign);
-  Include(defFlags, dfInternalEditOnly);
+  if wbStarfieldIsABugInfestedHellhole then begin
+    Include(defFlags, dfDontAssign);
+    Include(defFlags, dfInternalEditOnly);
+  end;
   Include(defFlags, dfCanContainReflection);
   Include(defFlags, dfCanContainFormID);
 end;
