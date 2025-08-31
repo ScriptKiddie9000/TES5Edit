@@ -1,9 +1,11 @@
-# xEdit
+# xEdit Shiny Edition
 
 xEdit 4.0.0 by ElminsterAU. Updates since 2012 include TES5Edit/SSEEdit/FO4Edit by Hlp, Zilav and Sharlikran. LOD management by Sheson.
 
 ## Unnofficial, Unsupported, Unsafe Reflective Starfield Patch
-This was not created by the xEdit team. DO NOT BOTHER THEM ABOUT IT.
+This fork was _not_ created by the xEdit team. DO NOT BOTHER THEM ABOUT It.
+
+If you enconter a bug / issue fix it yourself. Or use this issue tracker here: https://github.com/ScriptKiddie9000/TES5Edit/issues, DO NOT use the main issue tracker.
 
 ## Releases
 
